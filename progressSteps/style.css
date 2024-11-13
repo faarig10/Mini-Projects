@@ -14,21 +14,22 @@ body {
   background-color: #f6f7fb;
   display: flex;
   align-items: center;
-  .progress {
-    background-color: #3498db;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    height: 4px;
-    width: 0%;
-    z-index: -1;
-    transition: 0.4s ease;
-  }
   justify-content: center;
   height: 100vh;
   overflow: hidden;
   margin: 0;
+}
+
+.progress {
+  background-color: #3498db;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 4px;
+  width: 0%;
+  z-index: -1;
+  transition: 0.4s ease;
 }
 
 .container {
@@ -106,5 +107,5 @@ body {
 
 .btn:disabled {
   background-color: var(--line-border-empty);
-  cursor: :not-allowed;
+  cursor: not-allowed;
 }
